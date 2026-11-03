@@ -14,7 +14,7 @@ npm run dev
 
 URL local usual: `http://localhost:5173`. O GitHub já está apontando para `VictorGodoy06`, e a lista de projetos pode funcionar sem Supabase. As partes dependentes de banco/e-mail NÃO estarão disponíveis até configurar.
 
-Execute `npm run format`, `npm run lint`, `npm run typecheck`, `npm test` e `npm run build`. Inclua `package-lock.json` gerado em seu primeiro commit e altere o passo CI de `npm install` para `npm ci` quando houver lockfile. Não comite `.env`.
+Execute `npm run format`, `npm run lint`, `npm test` e `npm run build`. Inclua `package-lock.json` gerado em seu primeiro commit e altere o passo CI de `npm install` para `npm ci` quando houver lockfile. Não comite `.env`.
 
 ## 2. Criar repositório GitHub público
 

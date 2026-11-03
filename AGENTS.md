@@ -4,7 +4,7 @@ Estas regras orientam IA e humanos. Antes de editar código, leia `README.md`, `
 
 ## Arquitetura
 
-- Aplicação React + TypeScript + Vite. `src/pages` contém páginas; `src/components` apresenta elementos reutilizáveis; `src/features` agrupa regras por domínio; `src/lib` centraliza SDKs e utilitários; `src/hooks` contém hooks genéricos.
+- Aplicação React + JavaScript + Vite. `src/pages` contém páginas; `src/components` apresenta elementos reutilizáveis; `src/features` agrupa regras por domínio; `src/lib` centraliza SDKs e utilitários; `src/hooks` contém hooks genéricos.
 - APIs e persistência devem ficar fora dos componentes puramente visuais.
 - Todo dado assíncrono tem estados loading, error e empty. Github usa TanStack Query com cache e sem fetch redundante.
 - Dashboard exige autenticação E presença em `site_admins`; controle real de acesso está em RLS do Supabase. Nunca confiar apenas na proteção do React.
@@ -12,9 +12,9 @@ Estas regras orientam IA e humanos. Antes de editar código, leia `README.md`, `
 
 ## Padrões
 
-- Componentes, tipos e interfaces: `PascalCase`; funções e variáveis: `camelCase`; hooks: prefixo `use`.
-- Arquivos de componentes: `PascalCase.tsx`; arquivos de serviços: nome descritivo `camelCase.ts`; testes: `*.test.ts(x)` ao lado da funcionalidade.
-- Usar ESLint, Prettier, TypeScript estrito, teste automatizado e acessibilidade (labels, foco, `aria-*`).
+- Componentes: `PascalCase`; funções e variáveis: `camelCase`; hooks: prefixo `use`.
+- Arquivos de componentes: `PascalCase.jsx`; arquivos de serviços: nome descritivo `camelCase.js`; testes: `*.test.js(x)` ao lado da funcionalidade.
+- Usar ESLint, Prettier, JavaScript moderno (ES Modules), teste automatizado e acessibilidade (labels, foco, `aria-*`).
 - Novos formulários precisam validação de campos, estado de envio, erros claros e testes.
 - Novas páginas privadas: `ProtectedRoute` + RLS, teste de negação; novas rotas públicas: tratamento de 404 e erro.
 
@@ -22,7 +22,7 @@ Estas regras orientam IA e humanos. Antes de editar código, leia `README.md`, `
 
 1. Criar branch `feature/assunto`, `fix/assunto` ou `docs/assunto` a partir de `main`.
 2. Fazer mudanças pequenas, com teste para comportamento crítico.
-3. Executar `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`.
+3. Executar `npm run lint`, `npm test`, `npm run build`.
 4. Registrar commit Conventional Commits: `feat:`, `fix:`, `test:`, `docs:`, `refactor:`, `chore:`.
 5. Abrir Pull Request, revisar alterações e integrar à `main` após CI passar.
 6. CI na `main` e Vercel publicam automaticamente após push.

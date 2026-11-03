@@ -1,0 +1,13 @@
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react'
+export default defineConfig({
+  plugins: [react()],
+  server: { allowedHosts: ['terminal.local'] },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['src/test/setup.js'],
+    css: false,
+    clearMocks: true,
+    exclude: ['node_modules/**', 'dist/**'],
+  },
+})

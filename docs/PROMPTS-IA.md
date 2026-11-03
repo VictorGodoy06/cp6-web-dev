@@ -6,7 +6,7 @@ Objetivo: mostrar a IA aplicando instruções reais, em vez de só falar que há
 
 Abra a paleta de agentes no VS Code, selecione **Portfolio Reviewer** (arquivo `.github/agents/portfolio-reviewer.agent.md`) e envie:
 
-> Revise a segurança do formulário `src/features/contact/ContactForm.tsx` e da função `supabase/functions/send-contact/index.ts` conforme `AGENTS.md` e a skill `security-review`. Faça uma lista priorizada de riscos, testes faltantes e recomendações sem editar arquivos.
+> Revise a segurança do formulário `src/features/contact/ContactForm.jsx` e da função `supabase/functions/send-contact/index.js` conforme `AGENTS.md` e a skill `security-review`. Faça uma lista priorizada de riscos, testes faltantes e recomendações sem editar arquivos.
 
 Verifique se o agente identifica que secrets são server-side, RLS é regra no banco e o formulário revalida no servidor.
 
@@ -16,7 +16,7 @@ Acione a skill `frontend-tests` (ou inclua o nome e arquivo no prompt) e envie:
 
 > Crie uma proposta de teste que verifique que o dashboard não aparece para um usuário autenticado sem o registro na tabela `site_admins`. Mostre qual arquivo de teste seria alterado e qual comando de validação executar.
 
-Confirme que a recomendação se alinha ao arquivo `src/features/auth/ProtectedRoute.test.tsx`.
+Confirme que a recomendação se alinha ao arquivo `src/features/auth/ProtectedRoute.test.jsx`.
 
 ## Demonstração 3: MCP do GitHub
 

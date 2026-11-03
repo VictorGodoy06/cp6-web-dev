@@ -6,7 +6,7 @@
 flowchart TB
     P[pages - Rotas React] --> C[components - UI reutilizável]
     P --> F[features - domínios]
-    F --> GH[github.ts / fetch]
+    F --> GH[github.js / fetch]
     F --> Q[TanStack Query / cache]
     F --> SB[Supabase Client]
     SB --> DB[(Postgres + RLS)]

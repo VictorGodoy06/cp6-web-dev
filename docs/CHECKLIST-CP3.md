@@ -4,22 +4,22 @@ O status inicial do ZIP é **implementado em código, pendente de integração/v
 
 | Rubrica obrigatória              | Onde verificar                                                             | Prova para professor                                     |
 | -------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Rota individual e 404            | `src/app/App.tsx`, `pages/ProjectDetailPage.tsx`, `pages/NotFoundPage.tsx` | Abrir link direto e atualizar                            |
-| 404 de API / erro amigável       | `github.ts`, `Feedback.tsx`                                                | Simular falha de rede e ver erro                         |
-| Loading / erro / vazio           | `ProjectList.tsx`, `Feedback.tsx`, dashboard                               | Network throttling ou DevTools offline                   |
-| Spinner e envio bloqueado        | `ContactForm.tsx`                                                          | Clicar no botão e verificar disabled                     |
-| GitHub API sem cadastro manual   | `github.ts`                                                                | Network GET `api.github.com/users/.../repos`             |
+| Rota individual e 404            | `src/app/App.jsx`, `pages/ProjectDetailPage.jsx`, `pages/NotFoundPage.jsx` | Abrir link direto e atualizar                            |
+| 404 de API / erro amigável       | `github.js`, `Feedback.jsx`                                                | Simular falha de rede e ver erro                         |
+| Loading / erro / vazio           | `ProjectList.jsx`, `Feedback.jsx`, dashboard                               | Network throttling ou DevTools offline                   |
+| Spinner e envio bloqueado        | `ContactForm.jsx`                                                          | Clicar no botão e verificar disabled                     |
+| GitHub API sem cadastro manual   | `github.js`                                                                | Network GET `api.github.com/users/.../repos`             |
 | E-mail + mensagem gravada        | Edge `send-contact` / SQL                                                  | Caixa de e-mail e linha no dashboard **após configurar** |
-| Validações por campo             | `schema.ts`                                                                | Campos vazios, e-mail inválido, texto curto              |
+| Validações por campo             | `schema.js`                                                                | Campos vazios, e-mail inválido, texto curto              |
 | Proteção real do dashboard       | `ProtectedRoute`, RLS                                                      | Anônimo e usuário não-admin são negados                  |
-| Respondida e destaques           | `DashboardPage.tsx`                                                        | Marcar estado e ver alteração na home                    |
-| Tema persistente                 | `useTheme.tsx`                                                             | Trocar tema e recarregar                                 |
+| Respondida e destaques           | `DashboardPage.jsx`                                                        | Marcar estado e ver alteração na home                    |
+| Tema persistente                 | `useTheme.jsx`                                                             | Trocar tema e recarregar                                 |
 | Responsivo/reutilização          | `styles.css`, `ProjectCard`, `Button`                                      | Mostrar 375px e 1440px                                   |
 | Performance ≥ 80 mobile          | `docs/DEPLOY.md`                                                           | Screenshot REAL do Lighthouse da URL Vercel              |
-| WebP lazy + dimensões            | `public/images`, `ProjectCard.tsx`                                         | Network imagens e elementos `<img>`                      |
-| Dashboard lazy                   | `App.tsx`                                                                  | Chunks não carregam na home                              |
-| Sem GitHub fetch repetido        | `queryClient.ts`                                                           | Navegar e ver Network + 5min staleTime                   |
-| Testes dos fluxos críticos       | `*.test.tsx`, `*.test.ts`                                                  | Terminal `npm test` verde                                |
+| WebP lazy + dimensões            | `public/images`, `ProjectCard.jsx`                                         | Network imagens e elementos `<img>`                      |
+| Dashboard lazy                   | `App.jsx`                                                                  | Chunks não carregam na home                              |
+| Sem GitHub fetch repetido        | `queryClient.js`                                                           | Navegar e ver Network + 5min staleTime                   |
+| Testes dos fluxos críticos       | `*.test.jsx`, `*.test.js`                                                  | Terminal `npm test` verde                                |
 | Deploy automático                | Vercel importado do GitHub                                                 | Commit na main → deploy novo                             |
 | Conventional Commits + branches  | `AGENTS.md`, `.github/workflows/ci.yml`                                    | Mostrar PRs e histórico verdadeiros                      |
 | Arquitetura / nomenclatura       | `src`, `AGENTS.md`, `README.md`                                            | Explicar diagrama e pastas                               |
@@ -32,7 +32,6 @@ O status inicial do ZIP é **implementado em código, pendente de integração/v
 
 - [ ] `npm install` concluído em seu computador.
 - [ ] `npm run lint` sem erros/avisos.
-- [ ] `npm run typecheck` sem erros.
 - [ ] `npm test` com testes passando.
 - [ ] `npm run build` sem erros.
 - [ ] Vercel publicada e deep links funcionando depois de F5.
