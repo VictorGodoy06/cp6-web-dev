@@ -9,7 +9,6 @@
 ## Evidências
 
 - [ ] `npm run lint` passou
-- [ ] `npm run typecheck` passou
 - [ ] `npm test` passou
 - [ ] `npm run build` passou
 - [ ] Verifiquei 375px e desktop, quando alterei interface

@@ -2,3 +2,4 @@ project_id = "portfolio-victor-cp3"
 
 [functions.send-contact]
 verify_jwt = false
+entrypoint = "./functions/send-contact/index.js"

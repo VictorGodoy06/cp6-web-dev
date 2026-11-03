@@ -20,8 +20,6 @@ jobs:
         run: npm run lint
       - name: Formatação
         run: npm run format:check
-      - name: TypeScript
-        run: npm run typecheck
       - name: Testes
         run: npm test
       - name: Build de produção

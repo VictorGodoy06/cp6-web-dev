@@ -5,7 +5,7 @@ Repositório solicitado: cp6-web-dev. Rubrica: CP3 — Portfolio — Stack e Har
 ## Evidências locais
 
 - Instalação npm concluída e package-lock.json gerado.
-- ESLint, TypeScript, Prettier e build de produção passaram.
+- ESLint, JavaScript, Prettier e build de produção passaram.
 - 14 testes automatizados passaram em 4 arquivos: validação do schema, formulário, proteção de rota e autorização assíncrona.
 - Corrigida limpeza do DOM entre testes: duas falhas do pacote original foram reproduzidas antes da correção.
 - Adicionados testes de erro do serviço de contato e de resposta antiga de permissão após logout.

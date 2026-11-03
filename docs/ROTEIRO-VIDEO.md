@@ -12,7 +12,7 @@
 
 **Mostrar:** `docs/FLUXOS.md`, árvore `src`, app rodando, `/projetos` e página de detalhes.
 
-**Falar:** “O front-end é React com TypeScript e Vite. React Router cuida das rotas, inclusive projetos individuais. Reescritas em `vercel.json` permitem atualizar links profundos. Separei `pages` para rotas, `components` para elementos visuais reaproveitáveis, `features` por domínio e `lib` para configuração. A chamada à API fica em `features/projects/github.ts`, fora dos cards, e o TanStack Query compartilha o cache. Cada resposta mostra skeleton, erro com tentativa de novo e estado vazio. Se der limite de requisições no GitHub, o usuário vê mensagem amigável.”
+**Falar:** “O front-end é React com JavaScript e Vite. React Router cuida das rotas, inclusive projetos individuais. Reescritas em `vercel.json` permitem atualizar links profundos. Separei `pages` para rotas, `components` para elementos visuais reaproveitáveis, `features` por domínio e `lib` para configuração. A chamada à API fica em `features/projects/github.js`, fora dos cards, e o TanStack Query compartilha o cache. Cada resposta mostra skeleton, erro com tentativa de novo e estado vazio. Se der limite de requisições no GitHub, o usuário vê mensagem amigável.”
 
 ## 02:15–03:50 · Back-end, segurança e percurso dos dados (1min35s)
 

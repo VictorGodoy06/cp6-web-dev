@@ -4,7 +4,7 @@ Nome do repositório solicitado: **cp6-web-dev**. A rubrica fornecida pelo profe
 
 **Revisão de 03/11:** consulte [AUDITORIA](docs/AUDITORIA-2026-11-03.md) para resultados comprovados e pendências.
 
-![React](https://img.shields.io/badge/React-19-20252b?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript) ![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite) ![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20Postgres-3ecf8e?logo=supabase)
+![React](https://img.shields.io/badge/React-19-20252b?logo=react) ![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-f7df1e?logo=javascript) ![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite) ![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20Postgres-3ecf8e?logo=supabase)
 
 Portfólio profissional construído para o Checkpoint 3 de Web Development da FIAP. Projetos são carregados automaticamente do [GitHub VictorGodoy06](https://github.com/VictorGodoy06). Inclui rotas individuais, 404, skeleton/erro/vazio, tema persistente, formulário validado, registro de contatos no Supabase, notificação por e-mail com Resend e dashboard do proprietário com login e políticas RLS.
 
@@ -24,7 +24,6 @@ Abra `http://localhost:5173`. O conteúdo do GitHub é público e dispensa token
 
 ```bash
 npm run lint
-npm run typecheck
 npm test
 npm run build
 npm run format
@@ -45,14 +44,14 @@ npm run format
 
 ```text
 src/
-├── app/App.tsx                     # Rotas + lazy loading
+├── app/App.jsx                     # Rotas + lazy loading
 ├── components/                     # Botão, card, feedback e layout
 ├── features/
 │   ├── auth/                       # AuthProvider, ProtectedRoute e login
 │   ├── contact/                    # Schema Zod, envio e formulário
 │   ├── dashboard/                  # Mensagens e destaques
 │   └── projects/                   # GitHub API, query e destaques
-├── hooks/useTheme.tsx              # Tema persistente
+├── hooks/useTheme.jsx              # Tema persistente
 ├── lib/                             # Config, cliente Supabase, cache
 └── pages/                           # Home, Sobre, Projetos, Detalhes, 404
 supabase/
@@ -80,8 +79,8 @@ Veja os diagramas completos em [`docs/FLUXOS.md`](docs/FLUXOS.md).
 
 - **GitHub Flow:** branches `feature/nome`, `fix/nome`, `docs/nome`, revisão por Pull Request e merge na `main` depois da CI.
 - **Conventional Commits:** `feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`. Exemplo: `feat: adiciona selecao de projetos em destaque`.
-- **Checks:** ESLint e Prettier com Husky/lint-staged antes de commits, Vitest e typecheck e build no CI GitHub Actions.
-- **Convenções:** PascalCase para componentes/tipos, camelCase para funções/serviços, hooks `use*`, testes próximos à funcionalidade.
+- **Checks:** ESLint e Prettier com Husky/lint-staged antes de commits, Vitest e build no CI GitHub Actions.
+- **Convenções:** PascalCase para componentes, camelCase para funções/serviços, hooks `use*`, testes próximos à funcionalidade.
 - **Segredos:** `.env` está no `.gitignore`; só `.env.example` vai ao repositório. `VITE_*` é público por definição. Chaves privadas ficam nos secrets das Edge Functions.
 
 ## Harness de IA
