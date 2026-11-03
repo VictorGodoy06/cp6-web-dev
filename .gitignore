@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+!.env.functions.example
+!.env.local.example
+supabase/functions/.env
+.DS_Store
+*.local
+*.log
+
+.vercel/
