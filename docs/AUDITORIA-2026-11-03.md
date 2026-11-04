@@ -52,3 +52,7 @@ Esta auditoria não certifica nota 10 nem considera a entrega concluída enquant
 - send-contact publicada em JavaScript, com origem de produção autorizada.
 - VITE_GITHUB_USERNAME, VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY (chave publishable) cadastradas na Vercel para todos os ambientes.
 - Pendentes: secrets de e-mail, usuário Auth administrador, verificação de envio e dashboard reais, mobile e Lighthouse. Não há comprovação de e-mail recebido até esta etapa.
+
+## Performance medida
+
+A pendência de medição de performance foi atendida: home pública obteve 100 em Lighthouse mobile. Métricas e link do relatório estão em [PERFORMANCE](PERFORMANCE.md). Isso não substitui a verificação de e-mail, login administrativo e demais fluxos.
