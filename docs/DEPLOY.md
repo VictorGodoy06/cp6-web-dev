@@ -2,6 +2,10 @@
 
 > O pacote não contém chaves nem acesso às suas contas. Não declare o formulário, dashboard e e-mail funcionais na apresentação antes de executar os passos 3 a 7 e fazer testes reais.
 
+## Estado atual
+
+O repositório público já existe: https://github.com/VictorGodoy06/cp6-web-dev. Não o recrie. A versão JavaScript foi publicada manualmente em https://cp6-web-dev-sable.vercel.app/. O deploy automático depende de conectar o GitHub nas configurações da conta Vercel e vincular o repositório ao projeto existente. Supabase e envio de e-mail continuam pendentes de configuração.
+
 ## 1. Abrir no VS Code e rodar
 
 Instale Node.js 22 ou superior. Extraia o ZIP, abra a pasta pelo VS Code, então execute no terminal:
@@ -18,14 +22,14 @@ Execute `npm run format`, `npm run lint`, `npm test` e `npm run build`. Inclua `
 
 ## 2. Criar repositório GitHub público
 
-No GitHub, clique **New repository** → nome sugerido `portfolio-victor-cp3` → Public. NÃO crie README remoto (este já vem com README). No terminal:
+No GitHub, clique **New repository** → nome sugerido `cp6-web-dev` → Public. NÃO crie README remoto (este já vem com README). No terminal:
 
 ```bash
 git init
 git add .
 git commit -m "chore: inicia portfolio com arquitetura e harness"
 git branch -M main
-git remote add origin https://github.com/VictorGodoy06/portfolio-victor-cp3.git
+git remote add origin https://github.com/VictorGodoy06/cp6-web-dev.git
 git push -u origin main
 ```
 
