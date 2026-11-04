@@ -71,7 +71,7 @@ create policy "Somente administrador atualiza destaque" on public.featured_repos
 -- Rate limiting transacional no Postgres, exclusivo da função server-side.
 revoke all on public.contact_rate_limits from anon, authenticated;
 create or replace function public.check_contact_rate(p_hash text)
-returns boolean language plpgsql security definer set search_path = '' as $$
+returns boolean language plpgsql security invoker set search_path = '' as $$
 declare attempt_count integer;
 begin
   if p_hash is null or length(p_hash) < 20 then return false; end if;

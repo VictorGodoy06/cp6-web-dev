@@ -40,3 +40,15 @@ O roteiro de até 8 minutos está em ROTEIRO-VIDEO.md. O aluno deve gravar rosto
 ## Limites
 
 Esta auditoria não certifica nota 10 nem considera a entrega concluída enquanto banco, e-mail, deploy, Lighthouse, mobile e vídeo não forem comprovados. Não foi inventado histórico anterior à criação do repositório.
+
+## Integração com Supabase
+
+- URL canônica: https://cp6-web-dev-nine.vercel.app/ (Vercel vg-0c1a, login GitHub victorgodoy06). Deploy automático da main confirmado no painel.
+- Projeto Supabase: cp6-web-dev, referência znpidvganserdnucnhfj, região sa-east-1.
+- Schema inicial aplicado: contact_messages, featured_repositories, site_admins e contact_rate_limits. RLS ativado nas quatro tabelas.
+- Privilégios verificados no banco: anon não lê nem insere mensagens e administradores; lê apenas destaques.
+- check_contact_rate usa SECURITY INVOKER e EXECUTE exclusivo de service_role; não precisa de elevação de privilégios.
+- Aviso informativo do advisor: contact_rate_limits tem RLS sem políticas. Isso é intencional: somente o servidor usa a tabela; acesso de anon/authenticated foi revogado.
+- send-contact publicada em JavaScript, com origem de produção autorizada.
+- VITE_GITHUB_USERNAME, VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY (chave publishable) cadastradas na Vercel para todos os ambientes.
+- Pendentes: secrets de e-mail, usuário Auth administrador, verificação de envio e dashboard reais, mobile e Lighthouse. Não há comprovação de e-mail recebido até esta etapa.
