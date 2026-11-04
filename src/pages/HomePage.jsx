@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="skills-grid">
           {[
             'React',
-            'JavaScript',
+            'Vite',
             'JavaScript',
             'HTML & CSS',
             'Python',

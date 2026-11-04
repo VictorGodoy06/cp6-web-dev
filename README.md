@@ -2,6 +2,8 @@
 
 Nome do repositório solicitado: **cp6-web-dev**. A rubrica fornecida pelo professor se intitula **CP3 — Portfolio — Stack e Harness Engineering**.
 
+**Site publicado:** https://cp6-web-dev-sable.vercel.app/
+
 **Revisão de 03/11:** consulte [AUDITORIA](docs/AUDITORIA-2026-11-03.md) para resultados comprovados e pendências.
 
 ![React](https://img.shields.io/badge/React-19-20252b?logo=react) ![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-f7df1e?logo=javascript) ![Vite](https://img.shields.io/badge/Vite-6-646cff?logo=vite) ![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20Postgres-3ecf8e?logo=supabase)
