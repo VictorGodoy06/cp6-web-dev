@@ -2,7 +2,10 @@
 import { createClient } from 'npm:@supabase/supabase-js@2'
 const jsonHeaders = { 'Content-Type': 'application/json; charset=utf-8' }
 function cors(origin) {
-  const allowed = (Deno.env.get('CONTACT_ALLOWED_ORIGINS') || 'http://localhost:5173')
+  const allowed = (
+    Deno.env.get('CONTACT_ALLOWED_ORIGINS') ||
+    'http://localhost:5173,https://cp6-web-dev-nine.vercel.app'
+  )
     .split(',')
     .map((item) => item.trim())
   return origin && allowed.includes(origin)

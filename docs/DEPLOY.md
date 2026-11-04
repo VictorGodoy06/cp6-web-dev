@@ -4,7 +4,7 @@
 
 ## Estado atual
 
-O repositório público já existe: https://github.com/VictorGodoy06/cp6-web-dev. Não o recrie. A versão JavaScript foi publicada manualmente em https://cp6-web-dev-sable.vercel.app/. O deploy automático depende de conectar o GitHub nas configurações da conta Vercel e vincular o repositório ao projeto existente. Supabase e envio de e-mail continuam pendentes de configuração.
+O repositório público já existe: https://github.com/VictorGodoy06/cp6-web-dev. Não o recrie. A versão JavaScript foi publicada manualmente em https://cp6-web-dev-nine.vercel.app/. O deploy automático da main está confirmado na conta GitHub victorgodoy06 (equipe vg-0c1a). O banco Supabase e a Edge Function já estão criados; falta criar o usuário administrador e cadastrar os secrets de e-mail.
 
 ## 1. Abrir no VS Code e rodar
 
